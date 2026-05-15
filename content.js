@@ -32,8 +32,8 @@ function attachButton(video) {
 
   const btn = document.createElement('button');
   btn.className = 'vd-btn';
-  btn.innerHTML = `${PIP_ICON} Détacher`;
-  btn.title = 'Afficher par-dessus toutes les fenêtres';
+  btn.innerHTML = `${PIP_ICON} Float`;
+  btn.title = 'Float on top of all windows';
 
   parent.appendChild(btn);
   attached.add(video);

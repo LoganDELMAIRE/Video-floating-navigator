@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Video Detach",
   "version": "1.0.0",
-  "description": "Détache les vidéos du navigateur et les affiche par-dessus toutes les fenêtres",
+  "description": "Detach videos from the browser and float them on top of all windows",
   "permissions": [],
   "host_permissions": [
     "<all_urls>"

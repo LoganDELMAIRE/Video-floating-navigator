@@ -1,35 +1,35 @@
 # Video Floating Navigator
 
-Extension Chrome qui affiche un bouton directement sur les vidéos pour les détacher du navigateur et les faire flotter par-dessus toutes les fenêtres.
+Chrome extension that adds a button directly on video elements to detach them from the browser and float them on top of all windows.
 
-## Fonctionnement
+## How it works
 
-Au survol d'une vidéo, un bouton **Détacher** apparaît en haut. Un clic active le mode Picture-in-Picture natif du navigateur : la vidéo devient une fenêtre flottante, redimensionnable et toujours visible par-dessus toutes les autres fenêtres et applications.
+Hovering over a video reveals a **Float** button at the top. Clicking it triggers the browser's native Picture-in-Picture mode — the video becomes a floating window, resizable and always on top of every other window and application.
 
-Le bouton apparaît aussi automatiquement pendant 2,5 secondes au démarrage d'une vidéo.
+The button also appears automatically for 2.5 seconds when a video starts playing.
 
-Fonctionne sur les vidéos chargées dynamiquement (YouTube, Twitch, Netflix, et tout site utilisant une balise `<video>`).
+Works with dynamically loaded videos (YouTube, Twitch, Netflix, and any site using a `<video>` element).
 
 ## Installation
 
-1. Cloner le dépôt
+1. Clone the repository
    ```bash
    git clone https://github.com/LoganDELMAIRE/Video-floating-navigator.git
    ```
-2. Ouvrir `chrome://extensions/` dans Chrome
-3. Activer le **Mode développeur** (bouton en haut à droite)
-4. Cliquer **Charger l'extension non empaquetée**
-5. Sélectionner le dossier cloné
+2. Open `chrome://extensions/` in Chrome
+3. Enable **Developer mode** (toggle in the top right)
+4. Click **Load unpacked**
+5. Select the cloned folder
 
 ## Structure
 
 ```
-├── manifest.json   # Configuration Manifest V3
-├── content.js      # Détection des vidéos et injection du bouton
-├── content.css     # Style du bouton flottant
-└── icons/          # Icônes 16 / 48 / 128 px
+├── manifest.json   # Manifest V3 config
+├── content.js      # Video detection and button injection
+├── content.css     # Floating button styles
+└── icons/          # Icons 16 / 48 / 128 px
 ```
 
-## Compatibilité
+## Requirements
 
-Nécessite Chrome 92+ (support Picture-in-Picture API).
+Chrome 92+ (Picture-in-Picture API support required).
